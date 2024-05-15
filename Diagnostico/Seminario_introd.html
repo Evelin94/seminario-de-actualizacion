@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda de Contactos</title>
+    
+    <style>
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+.container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    text-align: center;
+    color: #333;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+input[type="text"], input[type="tel"], button[type="submit"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 0 0 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.contacto-item {
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.contacto-item:hover {
+    transform: translateY(-5px);
+}
+
+.contacto-item p {
+    margin: 5px 0;
+    color: #555;
+}
+
+.contacto-item strong {
+    color: #007bff;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Agenda de Contactos</h1>
+        
+        <form id="formulario-contacto">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" required><br>
+            <label for="telefono">Telefono:</label>
+            <input type="tel" id="telefono" required><br>
+            <button type="submit">Agregar Contacto</button>
+        </form>
+        <h2>Lista de Contactos</h2>
+        <div id="lista-contactos"></div>
+    </div>
+
+    <script>
+       
+        function cargarContactos() {
+            fetch('seminarioInt.php')
+            .then(response => response.json())
+            .then(data => {
+                const listaContactos = document.getElementById('lista-contactos');
+                listaContactos.innerHTML = '';
+
+                data.forEach(contacto => {
+                    const contactoItem = document.createElement('div');
+                    contactoItem.classList.add('contacto-item');
+
+                    contactoItem.innerHTML = `
+                        <p><strong>Nombre:</strong> ${contacto.nombre}</p>
+                        <p><strong>Telefono:</strong> ${contacto.telefono}</p>
+                        `;
+
+                    listaContactos.appendChild(contactoItem);
+                });
+            })
+            .catch(error => {
+                console.error('Error:', error);
+            });
+        }
+        
+        document.getElementById('formulario-contacto').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const nombre = document.getElementById('nombre').value;
+            const telefono = document.getElementById('telefono').value;
+
+           
+            const formData = new FormData();
+            formData.append('nombre', nombre);
+            formData.append('telefono', telefono);
+
+            fetch('seminarioInt.php', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.text())
+            .then(data => {
+               
+                alert(data);
+               
+                cargarContactos();
+             
+                document.getElementById('formulario-contacto').reset();
+            })
+            .catch(error => {
+                console.error('Error:', error);
+            });
+        });
+        cargarContactos();
+    </script>
+</body>
+</html>
