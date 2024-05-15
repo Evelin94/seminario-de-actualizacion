@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda de Contactos</title>
+    
+    <style>
+
+        img {
+  -webkit-box-reflect: below;
+}
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #cccccc;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+        }
+        .contacto-item {
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+.button {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #04AA6D;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+.button:hover{background-color: #3e8e41}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+        form {
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="text"], input[type="tel"], button {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Agenda de Contactos</h1>
+        
+        
+        <!-- Formulario para crear nuevo contacto -->
+        <form id="formulario-contacto">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" required><br>
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" required><br>
+            <button type="submit">Agregar Contacto</button>
+        </form>
+
+        <!-- Lista de contactos -->
+        <h2>Lista de Contactos</h2>
+        <div id="lista-contactos"></div>
+    </div>
+
+    <script>
+        // Función para cargar la lista de contactos desde el backend
+        function cargarContactos() {
+            fetch('seminarioInt.php')
+            .then(response => response.json())
+            .then(data => {
+                const listaContactos = document.getElementById('lista-contactos');
+                listaContactos.innerHTML = '';
+
+                data.forEach(contacto => {
+                    const contactoItem = document.createElement('div');
+                    contactoItem.classList.add('contacto-item');
+
+                    contactoItem.innerHTML = `
+                        <p><strong>Nombre:</strong> ${contacto.nombre}</p>
+                        <p><strong>Teléfono:</strong> ${contacto.telefono}</p>
+                    `;
+
+                    listaContactos.appendChild(contactoItem);
+                });
+            })
+            .catch(error => {
+                console.error('Error:', error);
+            });
+        }
+
+        // Función para agregar un nuevo contacto mediante AJAX
+        document.getElementById('formulario-contacto').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const nombre = document.getElementById('nombre').value;
+            const telefono = document.getElementById('telefono').value;
+
+            // Crear objeto FormData con los datos del formulario
+            const formData = new FormData();
+            formData.append('nombre', nombre);
+            formData.append('telefono', telefono);
+
+            // Enviar datos al backend mediante AJAX
+            fetch('seminarioInt.php', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.text())
+            .then(data => {
+                // Mostrar mensaje de éxito
+                alert(data);
+                // Recargar la lista de contactos
+                cargarContactos();
+                // Limpiar formulario
+                document.getElementById('formulario-contacto').reset();
+            })
+            .catch(error => {
+                console.error('Error:', error);
+            });
+        });
+
+        // Cargar lista de contactos al cargar la página
+        cargarContactos();
+    </script>
+</body>
+</html>
