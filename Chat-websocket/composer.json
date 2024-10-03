@@ -1,0 +1,12 @@
+{
+    "name": "usuario/chatbox",
+    "description": "A simple chat application",
+    "require": {
+        "cboden/ratchet": "^0.4.4" 
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    }
+}
