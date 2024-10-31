@@ -1,0 +1,49 @@
+ .w3-half {
+     padding: 20px;
+ }
+
+ .long {
+     width: 80%;
+ }
+
+ .short {
+     width: 60%;
+ }
+
+ label {
+     padding-left: 18px;
+     line-height: 1.5 !important;
+ }
+
+ .myform {
+     margin-top: 20px;
+ }
+
+ label {
+     font-weight: 400 !important;
+ }
+
+ .w3-margin {
+     margin-top: 3px !important;
+ }
+
+ input {
+     font-size: 12px;
+     font-weight: 200 !important;
+ }
+
+ button {
+     margin-top: 20px;
+ }
+ 
+
+ #tabla1
+ {
+    margin-top: 25px;
+ }
+
+ #botondelete
+ {
+    margin-top: 25px;
+       
+ }

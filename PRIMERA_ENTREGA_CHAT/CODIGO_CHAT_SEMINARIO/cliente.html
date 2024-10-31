@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Multiusuario Cifrado</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=OpenSans&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+    </head>
+    
+</head>
+
+<body>
+    <h1>Chat Multiusuario Cifrado</h1>
+    <div id="michat">
+        <div id="messages"></div>
+        <input type="text" id="messageBox" placeholder="Escribe un mensaje...">
+        <button id="send" onclick="chat.sendMessage()">Enviar Mensaje</button>
+    </div>
+
+    <script>
+        class Mensaje {
+            constructor(contenido) {
+                this.contenido = contenido;
+            }
+
+            encrypt(key) {
+                const encrypted = CryptoJS.AES.encrypt(this.contenido, key, {
+                    mode: CryptoJS.mode.ECB,
+                    padding: CryptoJS.pad.Pkcs7
+                });
+                return encrypted.toString();
+            }
+
+            static decrypt(encryptedMessage, key) {
+                const decrypted = CryptoJS.AES.decrypt(encryptedMessage, key, {
+                    mode: CryptoJS.mode.ECB,
+                    padding: CryptoJS.pad.Pkcs7
+                });
+                return decrypted.toString(CryptoJS.enc.Utf8);
+            }
+        }
+
+        class WebSocketClient {
+            constructor(url) {
+                this.ws = new WebSocket(url);
+                this.key = null; // Clave recibida del servidor
+
+                this.ws.onopen = () => {
+                    console.log("Conectado al servidor WebSocket");
+                };
+
+                this.ws.onmessage = (event) => {
+                    this.handleMessage(event.data);
+                };
+
+                this.ws.onerror = (error) => {
+                    console.log("Error en WebSocket: ", error);
+                };
+
+                this.ws.onclose = () => {
+                    console.log("Conexión cerrada");
+                };
+            }
+
+            sendMessage() {
+                if (this.key) {
+                    let messageInput = document.getElementById('messageBox').value;
+
+                    if (messageInput.trim()) {
+                        const mensaje = new Mensaje(messageInput);
+                        const encryptedMessage = mensaje.encrypt(this.key);
+                        this.ws.send(encryptedMessage);
+
+                        this.displaySentMessage(messageInput);
+                        document.getElementById('messageBox').value = "";
+                    }
+                } else {
+                    console.log("Esperando recibir la clave del servidor...");
+                }
+            }
+
+            handleMessage(message) {
+                // Si el mensaje contiene la clave
+                if (message.startsWith("CLAVE:")) {
+                    this.key = CryptoJS.enc.Utf8.parse(message.split(":")[1]);
+                    console.log("Clave recibida del servidor:", this.key);
+                } else {
+                    const decryptedMessage = Mensaje.decrypt(message, this.key);
+                    this.displayReceivedMessage(decryptedMessage);
+                }
+            }
+
+            displaySentMessage(content) {
+                const messageDiv = document.createElement('div');
+                messageDiv.classList.add('enviado');
+                messageDiv.textContent = content;
+
+                this.appendMessageToChat(messageDiv);
+            }
+
+            displayReceivedMessage(content) {
+                const messageDiv = document.createElement('div');
+                messageDiv.classList.add('recibido');
+                messageDiv.textContent = "Servidor: " + content;
+
+                this.appendMessageToChat(messageDiv);
+            }
+
+            appendMessageToChat(messageDiv) {
+                const clearDiv = document.createElement('div');
+                clearDiv.classList.add('clear');
+                document.getElementById('messages').appendChild(clearDiv);
+                document.getElementById('messages').appendChild(messageDiv);
+                document.getElementById('messages').scrollTop = document.getElementById('messages').scrollHeight;
+            }
+        }
+
+        const chat = new WebSocketClient("ws://localhost:8765");
+    </script>
+
+</body>
+
+</html>

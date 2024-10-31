@@ -1,0 +1,105 @@
+  body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+
+  h2 {
+      color: #333;
+      text-align: center;
+  }
+
+  form {
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      padding: 20px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      width: 300px;
+      margin-bottom: 20px;
+  }
+
+  label {
+      display: block;
+      margin-bottom: 5px;
+  }
+
+  input[type="text"],
+  input[type="password"] {
+      width: 100%;
+      padding: 8px;
+      padding-right: 20px;
+      /* Añadido padding-right */
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+      box-sizing: border-box;
+      /* Asegura que el padding y el borde se incluyan en el ancho total */
+  }
+
+  input[type="submit"] {
+      width: 100%;
+      padding: 10px;
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+      font-size: 16px;
+  }
+
+  input[type="submit"]:hover {
+      background-color: #0056b3;
+  }
+
+  #backButton {
+      width: 10%;
+      padding: 10px;
+    background-color: #0056b3;
+      color: white;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+      font-size: 16px;
+      margin-top: 30px;
+  }
+
+  #backButton:hover {
+    background-color: #024081;
+  }
+
+   
+        .table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+    
+        .table th,
+        .table td {
+            border: 1px solid #dddddd;
+            padding: 8px 30px 8px 30px;
+            text-align: center;
+        }
+    
+        .table th {
+            background-color: #f2f2f2;
+        }
+    
+        /* Estilo Cebra */
+        .table tbody tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+    
+        /* Estilo Hover */
+        .table tbody tr:hover {
+            background-color: #ddd;
+        }
+
+        select 
+        {
+        margin-bottom: 20px;
+        height: 30px;
+        width: 300px;
+        }

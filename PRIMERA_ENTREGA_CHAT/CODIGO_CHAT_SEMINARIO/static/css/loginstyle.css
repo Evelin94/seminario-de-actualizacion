@@ -1,0 +1,149 @@
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('/static/fonts/OpenSans-Regular.woff') format('woff'),
+        url('/static/fonts/Roboto-Regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('/static/fonts/Roboto-Regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+
+body {
+     font-family: "Roboto";
+     background-image: url('img/peakpx3.jpg');
+     background-size: cover;
+     color: white;
+     font-size: 15px;    
+     margin: 0;
+     padding: 0;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     height: 100vh;
+ }
+
+.container {
+    background-color: rgb(172, 21, 172);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px 30px 20px 30px;
+    width: 320px;
+    text-align: center;
+}
+
+.container h3 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 24px;
+    margin-bottom: 22px;
+    margin-top: 10px;
+    color: #f8f6f6;
+    text-align: center;
+    font-weight: 700;
+}
+
+label {
+    font-family: "Roboto";
+    font-size: 15px;
+    font-weight: 500;
+    display: block;
+    margin-bottom: 8px;
+    margin-top: 14px;
+    color: #eeeaea;
+    text-align: left;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-family: "Roboto";
+    font-size: 15px;
+}
+
+input[type="submit"] {
+    background-color: #292828;
+    color: white;
+    font-size: 15px;
+    padding: 10px 40px;
+    border: 1px rgb(190, 187, 189) solid;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 15px;
+    margin-top: 10px;
+    width: 100%;
+}
+
+input[type="submit"]:hover {
+    background-color: #050505;
+    /* Color más oscuro al hacer hover */
+}
+
+#registro , #ingreso {
+    padding-bottom: 10px;
+    padding-top: 8px;
+}
+
+#registro button {
+    background-color: #cccaca;
+    /* Color de fondo original */
+    color: black;
+    font-size: 13px;
+    padding: 10px 20px;
+    border: 1px gray solid;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+
+#ingreso button {
+    background-color: #cccaca;
+    /* Color de fondo original */
+    color: black;
+    font-size: 15px;
+    padding: 10px 20px;
+    border: 1px gray solid;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+
+#registro button:hover {
+    background-color: #837f7f;
+    /* Color de hover un poco más oscuro */
+}
+
+
+.titulo {
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+a {
+    
+    font-size: 15px;
+    color: white;
+    font-family: "Roboto";
+    text-decoration: none;
+}
+
+#mensajeError {
+    margin-top: -5px;
+}

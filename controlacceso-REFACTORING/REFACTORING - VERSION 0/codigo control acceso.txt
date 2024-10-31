@@ -1,0 +1,104 @@
+-- MySQL Workbench Forward Engineering
+
+SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0;
+SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0;
+SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION';
+
+-- -----------------------------------------------------
+-- Schema controlacceso1
+-- -----------------------------------------------------
+
+-- -----------------------------------------------------
+-- Schema controlacceso1
+-- -----------------------------------------------------
+CREATE SCHEMA IF NOT EXISTS `controlacceso1` DEFAULT CHARACTER SET utf8 ;
+USE `controlacceso1` ;
+
+-- -----------------------------------------------------
+-- Table `controlacceso1`.`Usuarios`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `controlacceso1`.`Usuarios` (
+  `idUsuarios` INT NOT NULL AUTO_INCREMENT,
+  `usuario` VARCHAR(45) NOT NULL,
+  `password` VARCHAR(20) NULL,
+  PRIMARY KEY (`idUsuarios`),
+  UNIQUE INDEX `idUsuarios_UNIQUE` (`idUsuarios` ASC) VISIBLE,
+  UNIQUE INDEX `usuario_UNIQUE` (`usuario` ASC) VISIBLE)
+ENGINE = InnoDB;
+
+
+-- -----------------------------------------------------
+-- Table `controlacceso1`.`Grupos`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `controlacceso1`.`Grupos` (
+  `idGrupos` INT NOT NULL AUTO_INCREMENT,
+  `Grupo` VARCHAR(45) NULL,
+  PRIMARY KEY (`idGrupos`),
+  UNIQUE INDEX `idGrupos_UNIQUE` (`idGrupos` ASC) VISIBLE,
+  UNIQUE INDEX `Grupo_UNIQUE` (`Grupo` ASC) VISIBLE)
+ENGINE = InnoDB;
+
+
+-- -----------------------------------------------------
+-- Table `controlacceso1`.`Acciones`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `controlacceso1`.`Acciones` (
+  `idAcciones` INT NOT NULL AUTO_INCREMENT,
+  `Accion` VARCHAR(45) NULL,
+  PRIMARY KEY (`idAcciones`),
+  UNIQUE INDEX `idAcciones_UNIQUE` (`idAcciones` ASC) VISIBLE,
+  UNIQUE INDEX `Accion_UNIQUE` (`Accion` ASC) VISIBLE)
+ENGINE = InnoDB;
+
+
+-- -----------------------------------------------------
+-- Table `controlacceso1`.`Puestos`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `controlacceso1`.`Puestos` (
+  `idPuestos` INT NOT NULL AUTO_INCREMENT,
+  `Usuarios_idUsuarios` INT NOT NULL,
+  `Grupos_idGrupos` INT NOT NULL,
+  PRIMARY KEY (`idPuestos`),
+  UNIQUE INDEX `idPuestos_UNIQUE` (`idPuestos` ASC) VISIBLE,
+  INDEX `idUsuarios_idx` (`Usuarios_idUsuarios` ASC) VISIBLE,
+  INDEX `idGrupos_idx` (`Grupos_idGrupos` ASC) VISIBLE,
+  CONSTRAINT `idUsuarios`
+    FOREIGN KEY (`Usuarios_idUsuarios`)
+    REFERENCES `controlacceso1`.`Usuarios` (`idUsuarios`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+  CONSTRAINT `idGrupos`
+    FOREIGN KEY (`Grupos_idGrupos`)
+    REFERENCES `controlacceso1`.`Grupos` (`idGrupos`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB;
+
+
+-- -----------------------------------------------------
+-- Table `controlacceso1`.`Permisos`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `controlacceso1`.`Permisos` (
+  `idPermisos` INT NOT NULL AUTO_INCREMENT,
+  `Grupos_idGrupos` INT NULL,
+  `Acciones_idAcciones` INT NULL,
+  PRIMARY KEY (`idPermisos`),
+  UNIQUE INDEX `idPermisos_UNIQUE` (`idPermisos` ASC) VISIBLE,
+  UNIQUE INDEX `Grupos_idGrupos_UNIQUE` (`Grupos_idGrupos` ASC) VISIBLE,
+  UNIQUE INDEX `Acciones_idAcciones_UNIQUE` (`Acciones_idAcciones` ASC) VISIBLE,
+  CONSTRAINT `Grupos_idGrupos`
+    FOREIGN KEY (`Grupos_idGrupos`)
+    REFERENCES `controlacceso1`.`Grupos` (`idGrupos`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+  CONSTRAINT `idAcciones`
+    FOREIGN KEY (`Acciones_idAcciones`)
+    REFERENCES `controlacceso1`.`Acciones` (`idAcciones`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB;
+
+
+SET SQL_MODE=@OLD_SQL_MODE;
+SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;
+SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;

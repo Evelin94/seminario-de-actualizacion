@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/loginstyle.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='css/img/chat.png') }}" type="image/png">
+
+</head>
+
+<body>
+    
+    <div class="container">
+       
+        <h3>Registro</h3>
+        <form id="formRegister" action="/registrar" method="POST">
+            <label for="usuario">Usuario:</label>
+            <input type="text" id="usuario" name="usuario" required>
+            <label for="contraseña">Contraseña:</label>
+            <input type="password" id="contraseña" name="contraseña" required>
+            <input type="submit" value="Registrar">
+        </form>
+        <div id="mensajeError">
+        <div id="mensajeErrorUsuario" style="display: none; color: rgb(99, 5, 5);"></div>
+        <div id="mensajeErrorContraseña" style="display: none; color: rgb(99, 5, 5);"></div>                 
+        </div>
+
+        <div id="ingreso">
+            <a href="/"> Volver a Login</a>
+        </div>
+    </div>
+</body>
+</html>

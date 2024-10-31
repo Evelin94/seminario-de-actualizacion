@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Puesto</title>
+    <link rel="stylesheet" href="../styleSection.css">
+    <script src="modificacionPermiso.js" defer></script>
+    <link rel="icon" type="image/jpg" href="../favicon.jpg" />
+</head>
+
+<body>
+    <h2>Modificacion de Permiso</h2>
+   
+    <form id="searchForm">
+        <label for="idpermiso">Id Permiso:</label>
+        <input type="text" id="idpermiso" name="idpermiso" required>
+        <br>
+        <input type="submit" value="Consultar">
+    </form>
+
+    <div id="listado"></div>
+    
+    <form id="updateForm" style="display:none;">
+        <label for="selectgrupo">Grupo:</label>
+        <select id="selectgrupo" name="selectgrupo">
+           
+        </select>
+        <br><br>
+        <label for="selectaccion">Accion:</label>
+        <select id="selectaccion" name="selectaccion">
+          
+        </select>
+        <input type="submit" value="Actualizar">
+    </form>
+
+    <button id="backButton">Volver a Inicio</button>
+</body>
+
+</html>
