@@ -1,0 +1,18 @@
+SOLUCIONAR ESTE ERROR :
+
+Please install `face_recognition_models` with this command before using `face_recognition`: 
+
+SOLUCION: pip install setuptools 
+
+pip install flask flask_socketio cryptography pymysql bcrypt opencv-python face_recognition numpy
+
+pip install opencv-python
+pip install cmake
+
+    
+python -m venv venv
+pip install -r requirements.txt
+
+v3.9
+py -3.9 -m venv venv39
+.\venv39\Scripts\activate

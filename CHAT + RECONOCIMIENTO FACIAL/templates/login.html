@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/loginstyle.css') }}">
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename='img/chat.png') }}">
+
+
+<body>
+   
+    <div class="container">
+        <h3>Iniciar Sesion</h3>
+        <form id="formInicio" action="/login" method="POST">
+            <label for="username">Usuario</label>
+            <input type="text" id="username" name="username" required>
+            <label for="password">Contraseña</label>
+            <input type="password" id="password" name="password" autocomplete="off" required>  
+          
+            
+            <input type="submit" value="Iniciar Sesion">
+        </form>
+    
+        <!-- Mostrar mensajes flash en el div mensaje -->
+        <div id="mensaje">
+            {% with messages = get_flashed_messages(with_categories=true) %}
+            {% if messages %}
+            {% for category, message in messages %}
+            <div class="alert alert-{{ category }}">{{ message }}</div>
+            {% endfor %}
+            {% endif %}
+            {% endwith %}
+        </div>
+    
+        <div id="registro">
+            <a href="/register">Registrar Usuario</a>
+        </div>
+    </div>
+</body>
+<script>
+    // Cuando el DOM esté completamente cargado
+    document.addEventListener("DOMContentLoaded", function () {
+        // Selecciona el mensaje flash por su id
+        var flashMessage = document.getElementById('flash-message');
+
+        // Verifica si el mensaje flash existe
+        if (flashMessage) {
+            // Después de 5 segundos (5000 milisegundos), oculta el mensaje
+            setTimeout(function () {
+                flashMessage.style.display = 'none';
+            }, 5000);  // 5000 ms = 5 segundos
+        }
+    });
+</script>
+</html>

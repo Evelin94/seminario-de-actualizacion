@@ -1,0 +1,146 @@
+@font-face {
+    font-family: 'Open Sans';
+    src: url('/static/fonts/OpenSans-Regular.woff') format('woff');        
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('/static/fonts/Roboto-Regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+     font-family: "Roboto";
+    background-image: url('../img/peakpx3.jpg');
+     background-size: cover;
+     color: white;
+     font-size: 14px;
+ }
+
+ h1 {
+    font-family: 'Open Sans', sans-serif;
+     text-align: center;
+     font-weight: 800;
+     font-size: 32px;
+ }
+
+ #michat {
+     margin-top: 1vh;
+     margin-left: 20%;
+     margin-right: 20%;
+     padding-top: 20px;
+     padding-bottom: 5px;
+     padding-left: 20px;
+     padding-right: 20px;
+     background-color: rgb(172, 21, 172);
+     opacity: 0.95;
+     color: white;
+     border-radius: 10px;
+ }
+
+ #messages {
+    
+     line-height: 1.8em;
+     border-radius: 10px;
+     padding: 10px;
+     height: 230px;
+     overflow-y: auto;
+     background-color: rgba(0, 0, 0, 0.1);
+     margin-bottom: 20px;
+     margin-top: 20px;
+ }
+
+ #messageBox {
+    font-size: 14px;
+     display: inline-block;
+     width: 100%;
+     margin-bottom: 20px;
+     padding-top: 12px;
+     padding-bottom: 12px;
+     padding-left: 30px;
+     padding-right: 30px;
+     border-radius: 10px;
+    box-sizing: border-box;
+ }
+
+ #send {
+    width: 100%;
+     margin-top: 5px;
+     margin-bottom: 10px;
+     padding-top: 15px;
+     padding-bottom: 15px;
+     line-height: 1.2em;
+     color: white;
+     background: black;
+     border-radius: 10px;
+     cursor: pointer;
+     font-size: 14px;
+     opacity: 1;
+ }
+ 
+ .clear {
+     clear: both;
+     /* Esto forzará a que el siguiente contenido se ubique debajo de los elementos flotantes */
+ }
+
+
+ .enviado {
+    
+     float: right;
+     display: inline;
+     line-height: 1.2em;
+     border-radius: 10px;
+     background-color: #f7afd3;
+     color: rgb(14, 13, 13);
+     padding-top: 10px;
+     padding-bottom: 10px;
+     padding-right: 20px;
+     padding-left: 20px;
+
+     
+ }
+
+ .recibido {
+    float: left;    
+    display: inline;
+    border-radius: 10px;
+    background-color: #f1d9d9;
+    color: rgb(14, 13, 13);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+ }
+
+ #news {
+     margin-top: 2px;
+     margin-bottom: 12px;
+     background-color: white;
+     padding-top: 8px;
+     padding-bottom: 8px;
+     color: black;
+     padding-left: 15px;
+     font-size: 17px;
+     border-radius: 8px;
+     position: relative;
+     top: 0;
+     left: 0;
+     width: 98%;
+     max-height: 20px;
+     /* Altura máxima para limitar a dos líneas */
+     overflow-y: auto;
+     /* Barra de desplazamiento vertical */
+     white-space: normal;
+     /* Permite que el texto envuelva en varias líneas */
+     line-height: 1.8;
+ }
+
+ .links
+ {
+    margin-top: 3px;
+    margin-bottom: 23px;
+    color: white;
+ }

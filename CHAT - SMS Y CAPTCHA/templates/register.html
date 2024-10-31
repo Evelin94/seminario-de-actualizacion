@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/loginstyle.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='css/img/chat.png') }}" type="image/png">
+</head>
+
+<body>
+    <div class="container">
+        <h3>Registro</h3>
+        <form id="formRegister" action="/register" method="POST">
+            <label for="usuario">Usuario:</label>
+            <input type="text" id="usuario" name="usuario" required>
+            <label for="contraseña">Contraseña:</label>
+            <input type="password" id="password" name="password" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+          
+            <input type="submit" value="Registrar">
+        </form>
+
+        <!-- Mostrar mensajes flash en el div mensaje -->
+        <div id="mensaje">
+            {% with messages = get_flashed_messages(with_categories=true) %}
+            {% if messages %}
+            {% for category, message in messages %}
+            <div class="alert alert-{{ category }}">{{ message }}</div>
+            {% endfor %}
+            {% endif %}
+            {% endwith %}
+        </div>
+
+
+        <div id="ingreso">
+            <a href="/"> Volver a Login</a>
+        </div>
+    </div>
+
+</body>
+
+<!-- Incluye el archivo JS -->
+<script src="{{ url_for('static', filename='js/script.js') }}"></script>
+<script>
+    // Espera hasta que el DOM esté completamente cargado
+    document.addEventListener('DOMContentLoaded', function () {
+        // Selecciona todos los mensajes flash generados dinámicamente
+        const flashMessages = document.querySelectorAll('#flash-message');
+
+        // Si hay mensajes, espera 5 segundos y luego los oculta
+        flashMessages.forEach(function (flashMessage) {
+            setTimeout(function () {
+                flashMessage.style.display = 'none';
+            }, 5000); // 5000 ms = 5 segundos
+        });
+    });
+</script>
+
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/recognitionstyle.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='css/img/chat.png') }}" type="image/png">
+    <style>
+
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <!-- Coloca el título aquí -->
+        <h3>Reconocimiento Facial</h3>
+    
+        <!-- Formulario y columnas -->
+        
+            <form id="formRecongnition" action="/verifyphoto" method="POST">
+                <div id="segundacolumna" class="columna">
+                    <h3>Webcam</h3>
+                    <div class="screen">
+                        <video id="video" width="320" height="240" autoplay></video>
+                        <canvas id="canvas" style="display: none;"></canvas><br><br>
+                        <button type="button" id="takePhoto">Tomar Foto</button><br><br>
+                        <input type="hidden" id="photoData" name="photoData">
+                        <input type="hidden" id="photoName" name="photoName">
+                    </div>
+                </div>
+    
+                <div id="tercercolumna" class="columna">
+                    <h3>Foto Capturada</h3>
+                    <div class="screen">
+                        <img id="photo" alt="La imagen aparecerá aquí" width="320" height="240">
+                    </div>
+                </div>
+
+                <!-- Botón fuera de las columnas -->
+                        <div id="enviar">
+                            <input type="submit" value="Verificar Usuario">
+                        </div>
+
+            </form>
+        
+    
+       
+    
+        <!-- Mostrar mensajes flash en el div mensaje -->
+        <div id="mensaje">
+            {% with messages = get_flashed_messages(with_categories=true) %}
+            {% if messages %}
+            {% for category, message in messages %}
+            <div class="alert alert-{{ category }}">{{ message }}</div>
+            {% endfor %}
+            {% endif %}
+            {% endwith %}
+        </div>
+    </div>
+
+
+
+    <!-- Incluye el archivo JS -->
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+    <script>
+           
+
+        const video = document.getElementById('video');
+        const canvas = document.getElementById('canvas');
+        const context = canvas.getContext('2d');
+        const photo = document.getElementById('photo');
+        const takePhotoButton = document.getElementById('takePhoto');
+        const photoDataInput = document.getElementById('photoData');
+        const photoNameInput = document.getElementById('photoName');
+
+        navigator.mediaDevices.getUserMedia({ video: true })
+            .then(stream => {
+                video.srcObject = stream;
+            })
+            .catch(err => {
+                console.error("Error al acceder a la cámara:", err);
+            });
+
+        takePhotoButton.addEventListener('click', function () {
+            canvas.width = video.videoWidth;
+            canvas.height = video.videoHeight;
+            context.drawImage(video, 0, 0, canvas.width, canvas.height);
+            const dataURL = canvas.toDataURL('image/png');
+            photo.src = dataURL; // Mostrar la foto en el <img>
+            photoDataInput.value = dataURL; // Guardar la foto en un campo oculto
+
+            // Generar un nombre único para la foto
+            const timestamp = Date.now();
+            const photoName = `login_${timestamp}.png`;
+            photoNameInput.value = photoName; // Guardar el nombre en el campo oculto
+        });
+    </script>
+</body>
+
+</html>

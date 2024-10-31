@@ -1,0 +1,15 @@
+python -m venv venv
+
+.\entornovirtual\Scripts\activate
+
+
+pip install -r requirements.txt
+
+python app.py
+
+usuario : sergio
+password : ramone
+
+    
+
+
