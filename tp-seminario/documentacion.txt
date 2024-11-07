@@ -1,5 +1,0 @@
-mysqli_insert_id
-
-La funcion mysqli_insert_id() devuelve el ID generado por una query (normalmente INSERT) en una tabla con una columna que tenga el atributo AUTO_INCREMENT. 
-Si no se enviaron declaraciones INSERT o UPDATE a traves de esta conexion, o si la tabla modificada no tiene una columna con el atributo AUTO_INCREMENT, esta funcion devolvera cero.
-
