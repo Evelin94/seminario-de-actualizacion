@@ -5,13 +5,13 @@ import numpy as np
 face_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_frontalface_default.xml')
 
 
-imagenes = ["tefy.jpg","captura_reconocimiento_facial.png"]  # Agrega más imágenes si es posible
-labels = [1] * len(imagenes)  # Usar una etiqueta para tu rostro
+imagenes = ["tefy.jpg","captura_reconocimiento_facial.png"]  
+labels = [1] * len(imagenes) 
 
-# Crear el reconocedor
+
 model = cv2.face.LBPHFaceRecognizer_create()
 
-# Cargar las imágenes y etiquetas
+
 imagenes_array = []
 for img in imagenes:
     imagen = cv2.imread(img, cv2.IMREAD_GRAYSCALE)
@@ -19,7 +19,7 @@ for img in imagenes:
 
 model.train(imagenes_array, np.array(labels))
 
-# Inicia la captura de video desde la camara
+
 cap = cv2.VideoCapture(0)
 
 while True:
