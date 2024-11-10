@@ -1,0 +1,2224 @@
+Array
+(
+)
+Contenido del cuerpo JSON recibido: 
+
+Contenido del cuerpo JSON recibido: 
+
+Contenido del cuerpo JSON recibido: 
+
+Contenido del cuerpo JSON recibido: 
+
+Contenido del cuerpo JSON recibido: 
+
+Contenido del cuerpo JSON recibido: 
+
+Contenido del cuerpo JSON recibido: 
+
+Contenido del cuerpo JSON recibido: 
+
+Contenido del cuerpo JSON recibido: 
+
+Contenido del cuerpo JSON recibido: 
+
+Contenido del cuerpo JSON recibido: 
+
+Contenido del cuerpo JSON recibido: 
+
+Contenido del cuerpo JSON recibido: 
+
+Contenido decodificado: 
+
+Operation: 
+Data: 
+Username: 
+Password: 
+Contenido del cuerpo JSON recibido: 
+
+Contenido decodificado: 
+
+Operation: 
+Data: 
+Username: 
+Password: 
+Contenido del cuerpo JSON recibido: 
+
+Contenido decodificado: 
+
+Operation: 
+Data: 
+Username: 
+Password: 
+Contenido del cuerpo JSON recibido: 
+
+Contenido decodificado: 
+
+Operation: 
+Data: 
+Username: 
+Password: 
+Contenido del cuerpo JSON recibido: 
+
+Contenido decodificado: 
+
+Operation: 
+Data: 
+Username: 
+Password: 
+Contenido del cuerpo JSON recibido: 
+
+Contenido decodificado: 
+
+Operation: 
+Data: 
+Username: 
+Password: 
+Contenido del cuerpo JSON recibido: 
+
+Contenido decodificado: 
+
+Operation: 
+Data: 
+Username: 
+Password: 
+Contenido del cuerpo JSON recibido: 
+
+Contenido decodificado: 
+
+Operation: 
+Data: 
+Username: 
+Password: 
+Contenido del cuerpo JSON recibido: 
+
+Contenido decodificado: 
+
+Operation: 
+Data: 
+Username: 
+Password: 
+Contenido del cuerpo JSON recibido: 
+{"operation":"user","data":{"username":"eve","password":"789789"}}
+Contenido decodificado: 
+stdClass Object
+(
+    [operation] => user
+    [data] => stdClass Object
+        (
+            [username] => eve
+            [password] => 789789
+        )
+
+)
+
+Operation: user
+Data: stdClass Object
+(
+    [username] => eve
+    [password] => 789789
+)
+
+Username: eve
+Password: 789789
+Contenido del cuerpo JSON recibido: 
+
+Contenido decodificado: 
+
+Operation: 
+Data: 
+Username: 
+Password: 
+Contenido del cuerpo JSON recibido: 
+
+Contenido decodificado: 
+
+Operation: 
+Data: 
+Username: 
+Password: 
+Contenido del cuerpo JSON recibido: 
+
+Contenido decodificado: 
+
+Operation: 
+Data: 
+Username: 
+Password: 
+Contenido del cuerpo JSON recibido: 
+
+Contenido decodificado: 
+
+Operation: 
+Data: 
+Username: 
+Password: 
+Contenido del cuerpo JSON recibido: 
+
+Contenido decodificado: 
+
+Operation: 
+Data: 
+Username: 
+Password: 
+Contenido del cuerpo JSON recibido: 
+
+Contenido decodificado: 
+
+Operation: 
+Data: 
+Username: 
+Password: 
+Contenido del cuerpo JSON recibido: 
+{"operation":"user","data":{"username":"francesco","password":"2020"}}
+Contenido decodificado: 
+stdClass Object
+(
+    [operation] => user
+    [data] => stdClass Object
+        (
+            [username] => francesco
+            [password] => 2020
+        )
+
+)
+
+Operation: user
+Data: stdClass Object
+(
+    [username] => francesco
+    [password] => 2020
+)
+
+Username: francesco
+Password: 2020
+Contenido del cuerpo JSON recibido: 
+{"operation":"user","data":{"username":"francesco","password":"2020"}}
+Contenido decodificado: 
+stdClass Object
+(
+    [operation] => user
+    [data] => stdClass Object
+        (
+            [username] => francesco
+            [password] => 2020
+        )
+
+)
+
+Operation: user
+Data: stdClass Object
+(
+    [username] => francesco
+    [password] => 2020
+)
+
+Username: francesco
+Password: 2020
+Contenido del cuerpo JSON recibido: 
+{"operation":"user","data":{"username":"francesco","password":"2020"}}
+Contenido decodificado: 
+stdClass Object
+(
+    [operation] => user
+    [data] => stdClass Object
+        (
+            [username] => francesco
+            [password] => 2020
+        )
+
+)
+
+Operation: user
+Data: stdClass Object
+(
+    [username] => francesco
+    [password] => 2020
+)
+
+Username: francesco
+Password: 2020
+Contenido del cuerpo JSON recibido: 
+{"operation":"user","data":{"username":"eve","password":"hhhh"}}
+Contenido decodificado: 
+stdClass Object
+(
+    [operation] => user
+    [data] => stdClass Object
+        (
+            [username] => eve
+            [password] => hhhh
+        )
+
+)
+
+Operation: user
+Data: stdClass Object
+(
+    [username] => eve
+    [password] => hhhh
+)
+
+Username: eve
+Password: hhhh
+Contenido del cuerpo JSON recibido: 
+{"operation":"user","data":{"username":"eve","password":"hhhh"}}
+Contenido decodificado: 
+stdClass Object
+(
+    [operation] => user
+    [data] => stdClass Object
+        (
+            [username] => eve
+            [password] => hhhh
+        )
+
+)
+
+Operation: user
+Data: stdClass Object
+(
+    [username] => eve
+    [password] => hhhh
+)
+
+Username: eve
+Password: hhhh
+Contenido del cuerpo JSON recibido: 
+{"operation":"user","data":{"username":"yuyu","password":"7878"}}
+Contenido decodificado: 
+stdClass Object
+(
+    [operation] => user
+    [data] => stdClass Object
+        (
+            [username] => yuyu
+            [password] => 7878
+        )
+
+)
+
+Operation: user
+Data: stdClass Object
+(
+    [username] => yuyu
+    [password] => 7878
+)
+
+Username: yuyu
+Password: 7878
+Contenido del cuerpo JSON recibido: 
+{"operation":"user","data":{"username":"francesco","password":"tomaselli"}}
+Contenido decodificado: 
+stdClass Object
+(
+    [operation] => user
+    [data] => stdClass Object
+        (
+            [username] => francesco
+            [password] => tomaselli
+        )
+
+)
+
+Operation: user
+Data: stdClass Object
+(
+    [username] => francesco
+    [password] => tomaselli
+)
+
+Username: francesco
+Password: tomaselli
+Contenido del cuerpo JSON recibido: 
+
+Contenido decodificado: 
+
+Operation: 
+Data: 
+Username: 
+Password: 
+Contenido del cuerpo JSON recibido: 
+{"operation":"user","data":{"username":"ssss","password":"ssss"}}
+Contenido decodificado: 
+stdClass Object
+(
+    [operation] => user
+    [data] => stdClass Object
+        (
+            [username] => ssss
+            [password] => ssss
+        )
+
+)
+
+Operation: user
+Data: stdClass Object
+(
+    [username] => ssss
+    [password] => ssss
+)
+
+Contenido del cuerpo JSON recibido: 
+{"operation":"user","data":{"username":"eve","password":"789"}}
+Contenido decodificado: 
+stdClass Object
+(
+    [operation] => user
+    [data] => stdClass Object
+        (
+            [username] => eve
+            [password] => 789
+        )
+
+)
+
+Operation: user
+Data: stdClass Object
+(
+    [username] => eve
+    [password] => 789
+)
+
+Contenido del cuerpo JSON recibido: 
+{"operation":"user","data":{"username":"eve","password":"789"}}
+Contenido decodificado: 
+stdClass Object
+(
+    [operation] => user
+    [data] => stdClass Object
+        (
+            [username] => eve
+            [password] => 789
+        )
+
+)
+
+Operation: user
+Data: stdClass Object
+(
+    [username] => eve
+    [password] => 789
+)
+
+Contenido del cuerpo JSON recibido: 
+{"operation":"user","data":{"username":"francesco","password":"sdf"}}
+Contenido decodificado: 
+stdClass Object
+(
+    [operation] => user
+    [data] => stdClass Object
+        (
+            [username] => francesco
+            [password] => sdf
+        )
+
+)
+
+Operation: user
+Data: stdClass Object
+(
+    [username] => francesco
+    [password] => sdf
+)
+
+Contenido del cuerpo JSON recibido: 
+{"operation":"user","data":{"username":"eve","password":"67788"}}
+Contenido decodificado: 
+stdClass Object
+(
+    [operation] => user
+    [data] => stdClass Object
+        (
+            [username] => eve
+            [password] => 67788
+        )
+
+)
+
+Operation: user
+Data: stdClass Object
+(
+    [username] => eve
+    [password] => 67788
+)
+
+Contenido del cuerpo JSON recibido: 
+{"operation":"user","data":{"username":"78768","password":"78768"}}
+Contenido decodificado: 
+stdClass Object
+(
+    [operation] => user
+    [data] => stdClass Object
+        (
+            [username] => 78768
+            [password] => 78768
+        )
+
+)
+
+Operation: user
+Data: stdClass Object
+(
+    [username] => 78768
+    [password] => 78768
+)
+
+Contenido del cuerpo JSON recibido: 
+{"operation":"userForm","data":{"username":"hol","password":"jl"}}
+Contenido decodificado: 
+stdClass Object
+(
+    [operation] => userForm
+    [data] => stdClass Object
+        (
+            [username] => hol
+            [password] => jl
+        )
+
+)
+
+Operation: userForm
+Data: stdClass Object
+(
+    [username] => hol
+    [password] => jl
+)
+
+Contenido del cuerpo JSON recibido: 
+{"operation":"userForm","data":{"username":"hol","password":"jl"}}
+Contenido decodificado: 
+stdClass Object
+(
+    [operation] => userForm
+    [data] => stdClass Object
+        (
+            [username] => hol
+            [password] => jl
+        )
+
+)
+
+Operation: userForm
+Data: stdClass Object
+(
+    [username] => hol
+    [password] => jl
+)
+
+Contenido del cuerpo JSON recibido: 
+{"operation":"user","data":{"username":"<as","password":"asd"}}
+Contenido decodificado: 
+stdClass Object
+(
+    [operation] => user
+    [data] => stdClass Object
+        (
+            [username] => <as
+            [password] => asd
+        )
+
+)
+
+Operation: user
+Data: stdClass Object
+(
+    [username] => <as
+    [password] => asd
+)
+
+Contenido del cuerpo JSON recibido: 
+{"operation":"user","data":{"username":"xv","password":"xv"}}
+Contenido decodificado: 
+stdClass Object
+(
+    [operation] => user
+    [data] => stdClass Object
+        (
+            [username] => xv
+            [password] => xv
+        )
+
+)
+
+Operation: user
+Data: stdClass Object
+(
+    [username] => xv
+    [password] => xv
+)
+
+Contenido del cuerpo JSON recibido: 
+
+Contenido decodificado: 
+
+Operation: 
+Data: 
+Contenido del cuerpo JSON recibido: 
+{"operation":"user","data":{"username":"srf","password":"sf"}}
+Contenido decodificado: 
+stdClass Object
+(
+    [operation] => user
+    [data] => stdClass Object
+        (
+            [username] => srf
+            [password] => sf
+        )
+
+)
+
+Operation: user
+Data: stdClass Object
+(
+    [username] => srf
+    [password] => sf
+)
+
+Contenido del cuerpo JSON recibido: 
+{"operation":"user","data":{"username":"srf","password":"sf"}}
+Contenido decodificado: 
+stdClass Object
+(
+    [operation] => user
+    [data] => stdClass Object
+        (
+            [username] => srf
+            [password] => sf
+        )
+
+)
+
+Operation: user
+Data: stdClass Object
+(
+    [username] => srf
+    [password] => sf
+)
+
+Contenido del cuerpo JSON recibido: 
+{"operation":"user","data":{"username":"zxdc","password":"zcz"}}
+Contenido decodificado: 
+stdClass Object
+(
+    [operation] => user
+    [data] => stdClass Object
+        (
+            [username] => zxdc
+            [password] => zcz
+        )
+
+)
+
+Operation: user
+Data: stdClass Object
+(
+    [username] => zxdc
+    [password] => zcz
+)
+
+Contenido del cuerpo JSON recibido: 
+{"operation":"user","data":{"username":"evelin ","password":"olivdfdf"}}
+Contenido decodificado: 
+stdClass Object
+(
+    [operation] => user
+    [data] => stdClass Object
+        (
+            [username] => evelin 
+            [password] => olivdfdf
+        )
+
+)
+
+Operation: user
+Data: stdClass Object
+(
+    [username] => evelin 
+    [password] => olivdfdf
+)
+
+Contenido del cuerpo JSON recibido: 
+{"operation":"user","data":{"username":"evelin ","password":"olivdfdf"}}
+Contenido decodificado: 
+stdClass Object
+(
+    [operation] => user
+    [data] => stdClass Object
+        (
+            [username] => evelin 
+            [password] => olivdfdf
+        )
+
+)
+
+Operation: user
+Data: stdClass Object
+(
+    [username] => evelin 
+    [password] => olivdfdf
+)
+
+Contenido del cuerpo JSON recibido: 
+{"operation":"user","data":{"username":"srf","password":"sf"}}
+Contenido decodificado: 
+stdClass Object
+(
+    [operation] => user
+    [data] => stdClass Object
+        (
+            [username] => srf
+            [password] => sf
+        )
+
+)
+
+Operation: user
+Data: stdClass Object
+(
+    [username] => srf
+    [password] => sf
+)
+
+Contenido del cuerpo JSON recibido: 
+{"operation":"user","data":{"username":"evelin ","password":"olivdfdf"}}
+Contenido decodificado: 
+stdClass Object
+(
+    [operation] => user
+    [data] => stdClass Object
+        (
+            [username] => evelin 
+            [password] => olivdfdf
+        )
+
+)
+
+Operation: user
+Data: stdClass Object
+(
+    [username] => evelin 
+    [password] => olivdfdf
+)
+
+Contenido del cuerpo JSON recibido: 
+{"operation":"user","data":{"username":"xc","password":"c"}}
+Contenido decodificado: 
+stdClass Object
+(
+    [operation] => user
+    [data] => stdClass Object
+        (
+            [username] => xc
+            [password] => c
+        )
+
+)
+
+Operation: user
+Data: stdClass Object
+(
+    [username] => xc
+    [password] => c
+)
+
+Contenido del cuerpo JSON recibido: 
+{"operation":"user","data":{"username":"xc","password":"c"}}
+Contenido decodificado: 
+stdClass Object
+(
+    [operation] => user
+    [data] => stdClass Object
+        (
+            [username] => xc
+            [password] => c
+        )
+
+)
+
+Operation: user
+Data: stdClass Object
+(
+    [username] => xc
+    [password] => c
+)
+
+Contenido del cuerpo JSON recibido: 
+{"operation":"user","data":{"username":"sd","password":"sd"}}
+Contenido decodificado: 
+stdClass Object
+(
+    [operation] => user
+    [data] => stdClass Object
+        (
+            [username] => sd
+            [password] => sd
+        )
+
+)
+
+Operation: user
+Data: stdClass Object
+(
+    [username] => sd
+    [password] => sd
+)
+
+Contenido del cuerpo JSON recibido: 
+{"operation":"user","data":{"username":"xz<","password":"<zx"}}
+Contenido decodificado: 
+stdClass Object
+(
+    [operation] => user
+    [data] => stdClass Object
+        (
+            [username] => xz<
+            [password] => <zx
+        )
+
+)
+
+Operation: user
+Data: stdClass Object
+(
+    [username] => xz<
+    [password] => <zx
+)
+
+Contenido del cuerpo JSON recibido: 
+{"operation":"user","data":{"username":"z<sc","password":"cxz"}}
+Contenido decodificado: 
+stdClass Object
+(
+    [operation] => user
+    [data] => stdClass Object
+        (
+            [username] => z<sc
+            [password] => cxz
+        )
+
+)
+
+Operation: user
+Data: stdClass Object
+(
+    [username] => z<sc
+    [password] => cxz
+)
+
+Contenido del cuerpo JSON recibido: 
+{"operation":"user","data":{"username":"z<sc","password":"cxz"}}
+Contenido decodificado: 
+stdClass Object
+(
+    [operation] => user
+    [data] => stdClass Object
+        (
+            [username] => z<sc
+            [password] => cxz
+        )
+
+)
+
+Operation: user
+Data: stdClass Object
+(
+    [username] => z<sc
+    [password] => cxz
+)
+
+Contenido del cuerpo JSON recibido: 
+{"operation":"user","data":{"username":"dfv","password":"sg"}}
+Contenido decodificado: 
+stdClass Object
+(
+    [operation] => user
+    [data] => stdClass Object
+        (
+            [username] => dfv
+            [password] => sg
+        )
+
+)
+
+Operation: user
+Data: stdClass Object
+(
+    [username] => dfv
+    [password] => sg
+)
+
+Contenido del cuerpo JSON recibido: 
+{"operation":"user","data":{"username":"dfv","password":"sg"}}
+Contenido decodificado: 
+stdClass Object
+(
+    [operation] => user
+    [data] => stdClass Object
+        (
+            [username] => dfv
+            [password] => sg
+        )
+
+)
+
+Operation: user
+Data: stdClass Object
+(
+    [username] => dfv
+    [password] => sg
+)
+
+Contenido del cuerpo JSON recibido: 
+{"operation":"user","data":{"username":"fghb","password":"fgh"}}
+Contenido decodificado: 
+stdClass Object
+(
+    [operation] => user
+    [data] => stdClass Object
+        (
+            [username] => fghb
+            [password] => fgh
+        )
+
+)
+
+Operation: user
+Data: stdClass Object
+(
+    [username] => fghb
+    [password] => fgh
+)
+
+Contenido del cuerpo JSON recibido: 
+
+Contenido decodificado: 
+
+Operation: 
+Data: 
+Contenido del cuerpo JSON recibido: 
+{"operation":"user","data":{"username":"francesco","password":"0987"}}
+Contenido decodificado: 
+stdClass Object
+(
+    [operation] => user
+    [data] => stdClass Object
+        (
+            [username] => francesco
+            [password] => 0987
+        )
+
+)
+
+Operation: user
+Data: stdClass Object
+(
+    [username] => francesco
+    [password] => 0987
+)
+
+Contenido del cuerpo JSON recibido: 
+{"operation":"user","data":{"username":"francesco","password":"0987"}}
+Contenido decodificado: 
+stdClass Object
+(
+    [operation] => user
+    [data] => stdClass Object
+        (
+            [username] => francesco
+            [password] => 0987
+        )
+
+)
+
+Operation: user
+Data: stdClass Object
+(
+    [username] => francesco
+    [password] => 0987
+)
+
+Contenido del cuerpo JSON recibido: 
+{"operation":"user","data":{"username":" ","password":"ghjghj"}}
+Contenido decodificado: 
+stdClass Object
+(
+    [operation] => user
+    [data] => stdClass Object
+        (
+            [username] =>  
+            [password] => ghjghj
+        )
+
+)
+
+Operation: user
+Data: stdClass Object
+(
+    [username] =>  
+    [password] => ghjghj
+)
+
+Contenido del cuerpo JSON recibido: 
+{"operation":"user","data":{"username":" ","password":"ghjghj"}}
+Contenido decodificado: 
+stdClass Object
+(
+    [operation] => user
+    [data] => stdClass Object
+        (
+            [username] =>  
+            [password] => ghjghj
+        )
+
+)
+
+Operation: user
+Data: stdClass Object
+(
+    [username] =>  
+    [password] => ghjghj
+)
+
+Contenido del cuerpo JSON recibido: 
+{"operation":"user","data":{"username":"fgyijg","password":"jgj"}}
+Contenido decodificado: 
+stdClass Object
+(
+    [operation] => user
+    [data] => stdClass Object
+        (
+            [username] => fgyijg
+            [password] => jgj
+        )
+
+)
+
+Operation: user
+Data: stdClass Object
+(
+    [username] => fgyijg
+    [password] => jgj
+)
+
+Contenido del cuerpo JSON recibido: 
+{"operation":"user","data":{"username":"francesco","password":"tom"}}
+Contenido decodificado: 
+stdClass Object
+(
+    [operation] => user
+    [data] => stdClass Object
+        (
+            [username] => francesco
+            [password] => tom
+        )
+
+)
+
+Operation: user
+Data: stdClass Object
+(
+    [username] => francesco
+    [password] => tom
+)
+
+Contenido del cuerpo JSON recibido: 
+{"operation":"user","data":{"username":"francesco","password":"tom"}}
+Contenido decodificado: 
+stdClass Object
+(
+    [operation] => user
+    [data] => stdClass Object
+        (
+            [username] => francesco
+            [password] => tom
+        )
+
+)
+
+Operation: user
+Data: stdClass Object
+(
+    [username] => francesco
+    [password] => tom
+)
+
+Contenido del cuerpo JSON recibido: 
+{"operation":"user","data":{"username":"fh","password":"fgh"}}
+Contenido decodificado: 
+stdClass Object
+(
+    [operation] => user
+    [data] => stdClass Object
+        (
+            [username] => fh
+            [password] => fgh
+        )
+
+)
+
+Operation: user
+Data: stdClass Object
+(
+    [username] => fh
+    [password] => fgh
+)
+
+Contenido del cuerpo JSON recibido: 
+{"operation":"user","data":{"username":"fh","password":"fgh"}}
+Contenido decodificado: 
+stdClass Object
+(
+    [operation] => user
+    [data] => stdClass Object
+        (
+            [username] => fh
+            [password] => fgh
+        )
+
+)
+
+Operation: user
+Data: stdClass Object
+(
+    [username] => fh
+    [password] => fgh
+)
+
+Contenido del cuerpo JSON recibido: 
+{"operation":"user","data":{"username":"fh","password":"fgh"}}
+Contenido decodificado: 
+stdClass Object
+(
+    [operation] => user
+    [data] => stdClass Object
+        (
+            [username] => fh
+            [password] => fgh
+        )
+
+)
+
+Operation: user
+Data: stdClass Object
+(
+    [username] => fh
+    [password] => fgh
+)
+
+Contenido del cuerpo JSON recibido: 
+{"operation":"user","data":{"username":"fh","password":"fgh"}}
+Contenido decodificado: 
+stdClass Object
+(
+    [operation] => user
+    [data] => stdClass Object
+        (
+            [username] => fh
+            [password] => fgh
+        )
+
+)
+
+Operation: user
+Data: stdClass Object
+(
+    [username] => fh
+    [password] => fgh
+)
+
+Contenido del cuerpo JSON recibido: 
+{"operation":"user","data":{"username":"francesco","password":"fhgj"}}
+Contenido decodificado: 
+stdClass Object
+(
+    [operation] => user
+    [data] => stdClass Object
+        (
+            [username] => francesco
+            [password] => fhgj
+        )
+
+)
+
+Operation: user
+Data: stdClass Object
+(
+    [username] => francesco
+    [password] => fhgj
+)
+
+Contenido del cuerpo JSON recibido: 
+{"operation":"user","data":{"username":"francesco","password":"fhgj"}}
+Contenido decodificado: 
+stdClass Object
+(
+    [operation] => user
+    [data] => stdClass Object
+        (
+            [username] => francesco
+            [password] => fhgj
+        )
+
+)
+
+Operation: user
+Data: stdClass Object
+(
+    [username] => francesco
+    [password] => fhgj
+)
+
+Contenido del cuerpo JSON recibido: 
+{"operation":"user","data":{"username":"vghj","password":"vbm"}}
+Contenido decodificado: 
+stdClass Object
+(
+    [operation] => user
+    [data] => stdClass Object
+        (
+            [username] => vghj
+            [password] => vbm
+        )
+
+)
+
+Operation: user
+Data: stdClass Object
+(
+    [username] => vghj
+    [password] => vbm
+)
+
+Contenido del cuerpo JSON recibido: 
+{"operation":"user","data":{"username":"vghj","password":"vbm"}}
+Contenido decodificado: 
+stdClass Object
+(
+    [operation] => user
+    [data] => stdClass Object
+        (
+            [username] => vghj
+            [password] => vbm
+        )
+
+)
+
+Operation: user
+Data: stdClass Object
+(
+    [username] => vghj
+    [password] => vbm
+)
+
+Contenido del cuerpo JSON recibido: 
+{"operation":"user","data":{"username":"vghj","password":"vbm"}}
+Contenido decodificado: 
+stdClass Object
+(
+    [operation] => user
+    [data] => stdClass Object
+        (
+            [username] => vghj
+            [password] => vbm
+        )
+
+)
+
+Operation: user
+Data: stdClass Object
+(
+    [username] => vghj
+    [password] => vbm
+)
+
+Contenido del cuerpo JSON recibido: 
+{"operation":"user","data":{"username":"vghj","password":"vbm"}}
+Contenido decodificado: 
+stdClass Object
+(
+    [operation] => user
+    [data] => stdClass Object
+        (
+            [username] => vghj
+            [password] => vbm
+        )
+
+)
+
+Operation: user
+Data: stdClass Object
+(
+    [username] => vghj
+    [password] => vbm
+)
+
+Contenido del cuerpo JSON recibido: 
+{"operation":"user","data":{"username":"try","password":"fgjh"}}
+Contenido decodificado: 
+stdClass Object
+(
+    [operation] => user
+    [data] => stdClass Object
+        (
+            [username] => try
+            [password] => fgjh
+        )
+
+)
+
+Operation: user
+Data: stdClass Object
+(
+    [username] => try
+    [password] => fgjh
+)
+
+Contenido del cuerpo JSON recibido: 
+{"operation":"user","data":{"username":"nm,","password":",nm,"}}
+Contenido decodificado: 
+stdClass Object
+(
+    [operation] => user
+    [data] => stdClass Object
+        (
+            [username] => nm,
+            [password] => ,nm,
+        )
+
+)
+
+Operation: user
+Data: stdClass Object
+(
+    [username] => nm,
+    [password] => ,nm,
+)
+
+Contenido del cuerpo JSON recibido: 
+{"operation":"user","data":{"username":"hgh","password":"cc"}}
+Contenido decodificado: 
+stdClass Object
+(
+    [operation] => user
+    [data] => stdClass Object
+        (
+            [username] => hgh
+            [password] => cc
+        )
+
+)
+
+Operation: user
+Data: stdClass Object
+(
+    [username] => hgh
+    [password] => cc
+)
+
+Contenido del cuerpo JSON recibido: 
+{"operation":"user","data":{"username":"hgh","password":"cc"}}
+Contenido decodificado: 
+stdClass Object
+(
+    [operation] => user
+    [data] => stdClass Object
+        (
+            [username] => hgh
+            [password] => cc
+        )
+
+)
+
+Operation: user
+Data: stdClass Object
+(
+    [username] => hgh
+    [password] => cc
+)
+
+Contenido del cuerpo JSON recibido: 
+{"operation":"user","data":{"username":"hgh","password":"cc"}}
+Contenido decodificado: 
+stdClass Object
+(
+    [operation] => user
+    [data] => stdClass Object
+        (
+            [username] => hgh
+            [password] => cc
+        )
+
+)
+
+Operation: user
+Data: stdClass Object
+(
+    [username] => hgh
+    [password] => cc
+)
+
+Contenido del cuerpo JSON recibido: 
+{"operation":"user","data":{"username":"hgh","password":"cc"}}
+Contenido decodificado: 
+stdClass Object
+(
+    [operation] => user
+    [data] => stdClass Object
+        (
+            [username] => hgh
+            [password] => cc
+        )
+
+)
+
+Operation: user
+Data: stdClass Object
+(
+    [username] => hgh
+    [password] => cc
+)
+
+Contenido del cuerpo JSON recibido: 
+{"operation":"user","data":{"username":"hgh","password":"cc"}}
+Contenido decodificado: 
+stdClass Object
+(
+    [operation] => user
+    [data] => stdClass Object
+        (
+            [username] => hgh
+            [password] => cc
+        )
+
+)
+
+Operation: user
+Data: stdClass Object
+(
+    [username] => hgh
+    [password] => cc
+)
+
+Contenido del cuerpo JSON recibido: 
+{"operation":"user","data":{"username":"hgh","password":"cc"}}
+Contenido decodificado: 
+stdClass Object
+(
+    [operation] => user
+    [data] => stdClass Object
+        (
+            [username] => hgh
+            [password] => cc
+        )
+
+)
+
+Operation: user
+Data: stdClass Object
+(
+    [username] => hgh
+    [password] => cc
+)
+
+Contenido del cuerpo JSON recibido: 
+{"operation":"user","data":{"username":"hgh","password":"cc"}}
+Contenido decodificado: 
+stdClass Object
+(
+    [operation] => user
+    [data] => stdClass Object
+        (
+            [username] => hgh
+            [password] => cc
+        )
+
+)
+
+Operation: user
+Data: stdClass Object
+(
+    [username] => hgh
+    [password] => cc
+)
+
+Contenido del cuerpo JSON recibido: 
+{"operation":"user","data":{"username":"fgh","password":"fh"}}
+Contenido decodificado: 
+stdClass Object
+(
+    [operation] => user
+    [data] => stdClass Object
+        (
+            [username] => fgh
+            [password] => fh
+        )
+
+)
+
+Operation: user
+Data: stdClass Object
+(
+    [username] => fgh
+    [password] => fh
+)
+
+Transacción iniciada
+Transacción revertida: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '0' for key 'PRIMARY'
+Contenido del cuerpo JSON recibido: 
+{"operation":"user","data":{"username":"fgh","password":"fh"}}
+Contenido decodificado: 
+stdClass Object
+(
+    [operation] => user
+    [data] => stdClass Object
+        (
+            [username] => fgh
+            [password] => fh
+        )
+
+)
+
+Operation: user
+Data: stdClass Object
+(
+    [username] => fgh
+    [password] => fh
+)
+
+Transacción iniciada
+Transacción revertida: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '0' for key 'PRIMARY'
+Contenido del cuerpo JSON recibido: 
+{"operation":"user","data":{"username":"fgh","password":"fh"}}
+Contenido decodificado: 
+stdClass Object
+(
+    [operation] => user
+    [data] => stdClass Object
+        (
+            [username] => fgh
+            [password] => fh
+        )
+
+)
+
+Operation: user
+Data: stdClass Object
+(
+    [username] => fgh
+    [password] => fh
+)
+
+Transacción iniciada
+Transacción revertida: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '0' for key 'PRIMARY'
+Contenido del cuerpo JSON recibido: 
+{"operation":"user","data":{"username":"fgh","password":"fh"}}
+Contenido decodificado: 
+stdClass Object
+(
+    [operation] => user
+    [data] => stdClass Object
+        (
+            [username] => fgh
+            [password] => fh
+        )
+
+)
+
+Operation: user
+Data: stdClass Object
+(
+    [username] => fgh
+    [password] => fh
+)
+
+Transacción iniciada
+Transacción revertida: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '0' for key 'PRIMARY'
+Contenido del cuerpo JSON recibido: 
+{"operation":"user","data":{"username":"fgh","password":"fh"}}
+Contenido decodificado: 
+stdClass Object
+(
+    [operation] => user
+    [data] => stdClass Object
+        (
+            [username] => fgh
+            [password] => fh
+        )
+
+)
+
+Operation: user
+Data: stdClass Object
+(
+    [username] => fgh
+    [password] => fh
+)
+
+Transacción iniciada
+Transacción revertida: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '0' for key 'PRIMARY'
+Contenido del cuerpo JSON recibido: 
+{"operation":"user","data":{"username":"fgh","password":"fh"}}
+Contenido decodificado: 
+stdClass Object
+(
+    [operation] => user
+    [data] => stdClass Object
+        (
+            [username] => fgh
+            [password] => fh
+        )
+
+)
+
+Operation: user
+Data: stdClass Object
+(
+    [username] => fgh
+    [password] => fh
+)
+
+Transacción iniciada
+Transacción revertida: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '0' for key 'PRIMARY'
+Contenido del cuerpo JSON recibido: 
+{"operation":"user","data":{"username":"fgh","password":"fh"}}
+Contenido decodificado: 
+stdClass Object
+(
+    [operation] => user
+    [data] => stdClass Object
+        (
+            [username] => fgh
+            [password] => fh
+        )
+
+)
+
+Operation: user
+Data: stdClass Object
+(
+    [username] => fgh
+    [password] => fh
+)
+
+Transacción iniciada
+Transacción revertida: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '0' for key 'PRIMARY'
+Contenido del cuerpo JSON recibido: 
+{"operation":"user","data":{"username":"gsdg","password":"sg"}}
+Contenido decodificado: 
+stdClass Object
+(
+    [operation] => user
+    [data] => stdClass Object
+        (
+            [username] => gsdg
+            [password] => sg
+        )
+
+)
+
+Operation: user
+Data: stdClass Object
+(
+    [username] => gsdg
+    [password] => sg
+)
+
+Transacción iniciada
+Transacción revertida: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '0' for key 'PRIMARY'
+Contenido del cuerpo JSON recibido: 
+{"operation":"user","data":{"username":"gsdg","password":"sg"}}
+Contenido decodificado: 
+stdClass Object
+(
+    [operation] => user
+    [data] => stdClass Object
+        (
+            [username] => gsdg
+            [password] => sg
+        )
+
+)
+
+Operation: user
+Data: stdClass Object
+(
+    [username] => gsdg
+    [password] => sg
+)
+
+Transacción iniciada
+Usuario insertado: gsdg
+Transacción confirmada
+Contenido del cuerpo JSON recibido: 
+{"operation":"user","data":{"username":"gsdg","password":"sg"}}
+Contenido decodificado: 
+stdClass Object
+(
+    [operation] => user
+    [data] => stdClass Object
+        (
+            [username] => gsdg
+            [password] => sg
+        )
+
+)
+
+Operation: user
+Data: stdClass Object
+(
+    [username] => gsdg
+    [password] => sg
+)
+
+Transacción iniciada
+Transacción revertida: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '0' for key 'PRIMARY'
+Contenido del cuerpo JSON recibido: 
+{"operation":"user","data":{"username":"gsdg","password":"sg"}}
+Contenido decodificado: 
+stdClass Object
+(
+    [operation] => user
+    [data] => stdClass Object
+        (
+            [username] => gsdg
+            [password] => sg
+        )
+
+)
+
+Operation: user
+Data: stdClass Object
+(
+    [username] => gsdg
+    [password] => sg
+)
+
+Transacción iniciada
+Transacción revertida: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '0' for key 'PRIMARY'
+Contenido del cuerpo JSON recibido: 
+{"operation":"user","data":{"username":"gsdg","password":"sg"}}
+Contenido decodificado: 
+stdClass Object
+(
+    [operation] => user
+    [data] => stdClass Object
+        (
+            [username] => gsdg
+            [password] => sg
+        )
+
+)
+
+Operation: user
+Data: stdClass Object
+(
+    [username] => gsdg
+    [password] => sg
+)
+
+Transacción iniciada
+Transacción revertida: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '0' for key 'PRIMARY'
+Contenido del cuerpo JSON recibido: 
+{"operation":"user","data":{"username":"gsdg","password":"sg"}}
+Contenido decodificado: 
+stdClass Object
+(
+    [operation] => user
+    [data] => stdClass Object
+        (
+            [username] => gsdg
+            [password] => sg
+        )
+
+)
+
+Operation: user
+Data: stdClass Object
+(
+    [username] => gsdg
+    [password] => sg
+)
+
+Transacción iniciada
+Transacción revertida: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '0' for key 'PRIMARY'
+Contenido del cuerpo JSON recibido: 
+{"operation":"user","data":{"username":"gsdg","password":"sg"}}
+Contenido decodificado: 
+stdClass Object
+(
+    [operation] => user
+    [data] => stdClass Object
+        (
+            [username] => gsdg
+            [password] => sg
+        )
+
+)
+
+Operation: user
+Data: stdClass Object
+(
+    [username] => gsdg
+    [password] => sg
+)
+
+Transacción iniciada
+Transacción revertida: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '0' for key 'PRIMARY'
+Contenido del cuerpo JSON recibido: 
+{"operation":"user","data":{"username":"gsdg","password":"sg"}}
+Contenido decodificado: 
+stdClass Object
+(
+    [operation] => user
+    [data] => stdClass Object
+        (
+            [username] => gsdg
+            [password] => sg
+        )
+
+)
+
+Operation: user
+Data: stdClass Object
+(
+    [username] => gsdg
+    [password] => sg
+)
+
+Transacción iniciada
+Usuario insertado: gsdg
+Transacción confirmada
+Contenido del cuerpo JSON recibido: 
+{"operation":"user","data":{"username":"gsdg","password":"sg"}}
+Contenido decodificado: 
+stdClass Object
+(
+    [operation] => user
+    [data] => stdClass Object
+        (
+            [username] => gsdg
+            [password] => sg
+        )
+
+)
+
+Operation: user
+Data: stdClass Object
+(
+    [username] => gsdg
+    [password] => sg
+)
+
+Transacción iniciada
+Transacción revertida: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '0' for key 'PRIMARY'
+Contenido del cuerpo JSON recibido: 
+
+Contenido decodificado: 
+
+Operation: 
+Data: 
+Contenido del cuerpo JSON recibido: 
+{"operation":"user","data":{"username":"xcv","password":"bxcv"}}
+Contenido decodificado: 
+stdClass Object
+(
+    [operation] => user
+    [data] => stdClass Object
+        (
+            [username] => xcv
+            [password] => bxcv
+        )
+
+)
+
+Operation: user
+Data: stdClass Object
+(
+    [username] => xcv
+    [password] => bxcv
+)
+
+Transacción iniciada
+Transacción revertida: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '0' for key 'PRIMARY'
+Contenido del cuerpo JSON recibido: 
+{"operation":"user","data":{"username":"xcv","password":"bxcv"}}
+Contenido decodificado: 
+stdClass Object
+(
+    [operation] => user
+    [data] => stdClass Object
+        (
+            [username] => xcv
+            [password] => bxcv
+        )
+
+)
+
+Operation: user
+Data: stdClass Object
+(
+    [username] => xcv
+    [password] => bxcv
+)
+
+Transacción iniciada
+Transacción revertida: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '0' for key 'PRIMARY'
+Contenido del cuerpo JSON recibido: 
+{"operation":"user","data":{"username":"xcv","password":"bxcv"}}
+Contenido decodificado: 
+stdClass Object
+(
+    [operation] => user
+    [data] => stdClass Object
+        (
+            [username] => xcv
+            [password] => bxcv
+        )
+
+)
+
+Operation: user
+Data: stdClass Object
+(
+    [username] => xcv
+    [password] => bxcv
+)
+
+Transacción iniciada
+Transacción revertida: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '0' for key 'PRIMARY'
+Contenido del cuerpo JSON recibido: 
+{"operation":"user","data":{"username":"xcv","password":"bxcv"}}
+Contenido decodificado: 
+stdClass Object
+(
+    [operation] => user
+    [data] => stdClass Object
+        (
+            [username] => xcv
+            [password] => bxcv
+        )
+
+)
+
+Operation: user
+Data: stdClass Object
+(
+    [username] => xcv
+    [password] => bxcv
+)
+
+Transacción iniciada
+Transacción revertida: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '0' for key 'PRIMARY'
+Contenido del cuerpo JSON recibido: 
+{"operation":"user","data":{"username":"xcv","password":"bxcv"}}
+Contenido decodificado: 
+stdClass Object
+(
+    [operation] => user
+    [data] => stdClass Object
+        (
+            [username] => xcv
+            [password] => bxcv
+        )
+
+)
+
+Operation: user
+Data: stdClass Object
+(
+    [username] => xcv
+    [password] => bxcv
+)
+
+Transacción iniciada
+Transacción revertida: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '0' for key 'PRIMARY'
+Contenido del cuerpo JSON recibido: 
+{"operation":"user","data":{"username":"xcv","password":"bxcv"}}
+Contenido decodificado: 
+stdClass Object
+(
+    [operation] => user
+    [data] => stdClass Object
+        (
+            [username] => xcv
+            [password] => bxcv
+        )
+
+)
+
+Operation: user
+Data: stdClass Object
+(
+    [username] => xcv
+    [password] => bxcv
+)
+
+Transacción iniciada
+Transacción confirmada
+Contenido del cuerpo JSON recibido: 
+{"operation":"user","data":{"username":"eve","password":"eve"}}
+Contenido decodificado: 
+stdClass Object
+(
+    [operation] => user
+    [data] => stdClass Object
+        (
+            [username] => eve
+            [password] => eve
+        )
+
+)
+
+Operation: user
+Data: stdClass Object
+(
+    [username] => eve
+    [password] => eve
+)
+
+Transacción iniciada
+Transacción revertida: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '0' for key 'PRIMARY'
+Contenido del cuerpo JSON recibido: 
+{"operation":"user","data":{"username":"eve","password":"eve"}}
+Contenido decodificado: 
+stdClass Object
+(
+    [operation] => user
+    [data] => stdClass Object
+        (
+            [username] => eve
+            [password] => eve
+        )
+
+)
+
+Operation: user
+Data: stdClass Object
+(
+    [username] => eve
+    [password] => eve
+)
+
+Transacción iniciada
+Transacción revertida: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '0' for key 'PRIMARY'
+Contenido del cuerpo JSON recibido: 
+{"operation":"user","data":{"username":"eve","password":"eve"}}
+Contenido decodificado: 
+stdClass Object
+(
+    [operation] => user
+    [data] => stdClass Object
+        (
+            [username] => eve
+            [password] => eve
+        )
+
+)
+
+Operation: user
+Data: stdClass Object
+(
+    [username] => eve
+    [password] => eve
+)
+
+Transacción iniciada
+Transacción confirmada
+Contenido del cuerpo JSON recibido: 
+{"operation":"user","data":{"username":"eve","password":"eve"}}
+Contenido decodificado: 
+stdClass Object
+(
+    [operation] => user
+    [data] => stdClass Object
+        (
+            [username] => eve
+            [password] => eve
+        )
+
+)
+
+Operation: user
+Data: stdClass Object
+(
+    [username] => eve
+    [password] => eve
+)
+
+Transacción iniciada
+Transacción revertida: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '0' for key 'PRIMARY'
+Contenido del cuerpo JSON recibido: 
+
+Contenido decodificado: 
+
+Operation: 
+Data: 
+Contenido del cuerpo JSON recibido: 
+{"operation":"user","data":{"username":"dfgh","password":"fgh"}}
+Contenido decodificado: 
+stdClass Object
+(
+    [operation] => user
+    [data] => stdClass Object
+        (
+            [username] => dfgh
+            [password] => fgh
+        )
+
+)
+
+Operation: user
+Data: stdClass Object
+(
+    [username] => dfgh
+    [password] => fgh
+)
+
+Contenido del cuerpo JSON recibido: 
+{"operation":"user","data":{"username":"dfgh","password":"fgh"}}
+Contenido decodificado: 
+stdClass Object
+(
+    [operation] => user
+    [data] => stdClass Object
+        (
+            [username] => dfgh
+            [password] => fgh
+        )
+
+)
+
+Operation: user
+Data: stdClass Object
+(
+    [username] => dfgh
+    [password] => fgh
+)
+
+Contenido del cuerpo JSON recibido: 
+{"operation":"user","data":{"username":"eve","password":"toma"}}
+Contenido decodificado: 
+stdClass Object
+(
+    [operation] => user
+    [data] => stdClass Object
+        (
+            [username] => eve
+            [password] => toma
+        )
+
+)
+
+Operation: user
+Data: stdClass Object
+(
+    [username] => eve
+    [password] => toma
+)
+
+Contenido del cuerpo JSON recibido: 
+{"operation":"user","data":{"username":"evelin ","password":"fgdfgfdg"}}
+Contenido decodificado: 
+stdClass Object
+(
+    [operation] => user
+    [data] => stdClass Object
+        (
+            [username] => evelin 
+            [password] => fgdfgfdg
+        )
+
+)
+
+Operation: user
+Data: stdClass Object
+(
+    [username] => evelin 
+    [password] => fgdfgfdg
+)
+
+Contenido del cuerpo JSON recibido: 
+{"operation":"user","data":{"username":"dg","password":"gdf"}}
+Contenido decodificado: 
+stdClass Object
+(
+    [operation] => user
+    [data] => stdClass Object
+        (
+            [username] => dg
+            [password] => gdf
+        )
+
+)
+
+Operation: user
+Data: stdClass Object
+(
+    [username] => dg
+    [password] => gdf
+)
+
+Contenido del cuerpo JSON recibido: 
+{"operation":"user","data":{"username":"dg","password":"gdf"}}
+Contenido decodificado: 
+stdClass Object
+(
+    [operation] => user
+    [data] => stdClass Object
+        (
+            [username] => dg
+            [password] => gdf
+        )
+
+)
+
+Operation: user
+Data: stdClass Object
+(
+    [username] => dg
+    [password] => gdf
+)
+
+Contenido del cuerpo JSON recibido: 
+{"operation":"user","data":{"username":"dfg","password":"dfg"}}
+Contenido decodificado: 
+stdClass Object
+(
+    [operation] => user
+    [data] => stdClass Object
+        (
+            [username] => dfg
+            [password] => dfg
+        )
+
+)
+
+Operation: user
+Data: stdClass Object
+(
+    [username] => dfg
+    [password] => dfg
+)
+
+Contenido del cuerpo JSON recibido: 
+
+Contenido decodificado: 
+
+Contenido del cuerpo JSON recibido: 
+
+Contenido decodificado: 
+
+Contenido del cuerpo JSON recibido: 
+{"operation":"user","data":{"username":"eee","password":"234242323"}}
+Contenido decodificado: 
+stdClass Object
+(
+    [operation] => user
+    [data] => stdClass Object
+        (
+            [username] => eee
+            [password] => 234242323
+        )
+
+)
+

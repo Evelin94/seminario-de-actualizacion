@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión</title>
+    <style>
+    
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 50;
+            padding: 50;
+        }
+        header {
+            background-color: #b6f704;
+            color:#10b67c;
+            padding: 5px;
+            text-align: left;
+        }
+        nav {
+            background-color: #056600;
+            padding: 10px;
+            text-align: center;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 5;
+            padding: 5;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 5px;
+        }
+        nav ul li a {
+            color: #f80673;
+            text-decoration: none;
+        }
+        main {
+            padding: 20px;
+        }
+        section {
+            margin-bottom: 20px;
+        }
+        h2 {
+            border-bottom: 1px solid #f50428;
+            padding-bottom: 5px;
+        }
+        form {
+            margin-top: 5px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="text"],
+        input[type="password"],
+        select {
+            width: 30%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #08ed91;
+            border-radius: 5px;
+        }
+        input[type="submit"] {
+    height: 50px;
+    font-size: 20px;
+    text-align: center;
+    line-height: 50px;
+    color: rgba(0, 0, 0, 0.9);
+    border-radius: 50px;
+    background: linear-gradient(-45deg, #ffa63d, #ff3d77, #338aff, #3cf0c5);
+    background-size: 300%;
+    -webkit-animation: anime 16s linear infinite;
+    animation: anime 16s linear infinite;
+        }
+        input[type="submit"]:hover {
+            background-color: #fffb04;
+        }
+    </style>
+</head>
+<body>
+ 
+    <header>
+        <h1> Usuarios</h1>
+    </header>
+    <nav>
+        
+    </nav>
+    <main>
+        <section id="usuarios">
+            <h2>Gestión de Usuarios</h2>
+            <form id="userForm">
+                <label for="nombre-usuario">Nombre de Usuario:</label>
+                <input type="text" id="nombre-usuario" name="nombre-usuario" required>
+                <label for="contrasena">Contraseña:</label>
+                <input type="password" id="contrasena" name="contrasena" required>
+                
+                <label for="nombre-grupo">Nombre del Grupo:</label>
+                <input type="text" id="nombre-grupo" name="nombre-grupo" required>
+                <label for="nombre-accion">Nombre de la Acción:</label>
+                <input type="text" id="nombre-accion" name="nombre-accion" required>
+
+                <input type="submit"
+                 value="AGREGAR">
+            </form>
+        
+        </section> 
+    </main>
+
+    <script src="formHandler.js"></script>
+</body>
+</html>
