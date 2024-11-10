@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Agenda de Contactos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Agenda de Contactos</h1>
+
+    <div id="contact-list">
+        <div class="w3-container">
+            
+            <form id="contact-form" onsubmit="event.preventDefault(); addContact();">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+    
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+    
+                <label for="direccion">Dirección:</label>
+                <input type="text" id="direccion" name="direccion" required>
+    
+                <label for="telefono">Teléfono:</label>
+                <input type="text" id="telefono" name="telefono" required>
+    
+                <button type="submit" class="w3-button w3-green">Agregar Contacto</button>
+            </form>
+    
+            
+            <div id="contact-list" class="w3-margin-top">
+               
+            </div>
+    </div>
+
+   
+
+    <script src="script.js"></script>
+</body>
+</html>
